@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "dom-density-map"
 version = "0.1.0"
-description = "Text-based DOM density maps for LLM browser automation — 79% fewer tokens than screenshots"
+description = "Text-based DOM density maps for LLM browser automation — up to 95% fewer tokens than screenshots"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"

@@ -1,6 +1,6 @@
 # dom-density-map
 
-Text-based DOM density maps for LLM browser automation — **79% fewer tokens than screenshots**.
+Text-based DOM density maps for LLM browser automation — **up to 95% fewer tokens than screenshots**.
 
 Connects to any Chrome instance via CDP (Chrome DevTools Protocol), walks the visible DOM, and renders a character grid showing element density and type. Interactive elements are indexed with labels and pixel coordinates. Designed for LLM agents that need to understand page layout without burning tokens on base64 screenshots.
 
@@ -156,9 +156,9 @@ from dom_density_map.core import DOM_WALKER_JS, ELEMENTS_AT_JS
 
 | Method | Tokens | Info |
 |--------|--------|------|
-| Screenshot (base64 PNG) | ~2,300 | Visual only, no selectors |
+| Screenshot (base64 PNG) | ~2,100 | Visual only, no selectors |
 | `dom-density-map` (default) | ~1,200 | Layout + all interactive elements |
-| `dom-density-map --sparse` | ~420 | RLE-compressed, same info |
+| `dom-density-map --sparse` | ~100–600 | RLE-compressed, varies by page complexity |
 | `dom-density-map --at X,Y` | ~550 | Full DOM stack at a point |
 
 ## Element Types
