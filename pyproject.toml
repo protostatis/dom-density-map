@@ -31,8 +31,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/zmzou/dom-density-map"
-Repository = "https://github.com/zmzou/dom-density-map"
+Homepage = "https://github.com/protostatis/dom-density-map"
+Repository = "https://github.com/protostatis/dom-density-map"
 
 [project.scripts]
 dom-density-map = "dom_density_map.core:main"
